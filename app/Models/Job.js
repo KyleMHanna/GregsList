@@ -20,6 +20,7 @@ export class Job {
             <p><span> ${this.hours} Hours</span></p>
             </h4>
             <h5>Description: ${this.description}</h5>
+        <button class="btn btn-danger" onclick="app.jobsController.deleteJob('${this.id}')">Delete</button>
         </div>
       </div>
     </div>
