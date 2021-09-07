@@ -8,12 +8,12 @@ const api = axios.create({
 class CarsService {
   async deleteCar(carId) {
   await api.delete(carId)
-  ProxyState.cars= ProxyState.cars.filter(c=c.id !== carId)
+  ProxyState.cars= ProxyState.cars.filter(c=>c.id !== carId)
 }
 
 async addCar(carData) {
   let res = await api.post('', carData)
-  ProxyState.cars = [...ProxyState.cars, testCar]
+  ProxyState.cars = [...ProxyState.cars, new Car(res.data)]
   }
 
 async getCars() {
