@@ -9,12 +9,20 @@ const api = axios.create({
 }) 
 
 class HouseService {
+  async deleteHouse(houseId){
+  await api.delete(houseId)
+  ProxyState.houses =ProxyState.house.filter(h=> h.id !== houseId)
+}
 
-  addHouse(houseData) {
-    var testHouse = new House(houseData)
-    ProxyState.houses = [...ProxyState.houses, testHouse]
-    console.log('add house in house service')
+async addHouse(houseData) {
+let res = await api.post ('', houseData)
+ProxyState.houses = [...ProxyState.houses, new House(res.data)]
   }
+
+async getHouses(){
+  let response =await api.get()
+  ProxyState.houses= response.data.map (h => new House(h))
+}
 }
 
 export const houseService = new HouseService()

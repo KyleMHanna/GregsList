@@ -17,7 +17,7 @@ get HouseTemplate(){
       <div class="card">
         <img src="${this.imgUrl}" alt="listing image" class="rounded">
         <div class="card-body">
-        <h3>  <span> ${this.price} </span></h3>
+        <h3>  <span> ${this.year} </span></h3>
           <h4 class=" justify-content-between">
             <p><span>  ${this.bedrooms} Rooms</span></p>
             <p><span> ${this.bathrooms} Bathrooms</span></p>

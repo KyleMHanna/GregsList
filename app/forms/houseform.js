@@ -6,32 +6,30 @@ export function getHouseFormTemplate() {
     <label for="price" class="">Price:</label>
     <input name="price" id="price"  class="form-control">
   </div>
-
   <div class="form-group">
-    <label for="address" class="">address:</label>
-    <input type="text" class="form-control" name="address" id="address" >
+    <label for="year" class="">year:</label>
+    <input type="number" class="form-control" name="year" id="year">
+  </div>
+  <div class="form-group">
+    <label for="levels" class="">levels:</label>
+    <input type="text" class="form-control" name="levels" id="levels">
   </div>
 
   <div class="form-group">
-    <label for="sqft" class="">sqft:</label>
-    <input type="text" class="form-control" name="sqft" id="sqft">
-  </div>
-
-  <div class="form-group">
-    <label for="rooms" class="">Rooms:</label>
-    <input type="number" class="form-control" name="rooms" id="rooms">
+    <label for="bedrooms" class="">Bedrooms:</label>
+    <input type="number" class="form-control" name="bedrooms" id="bedrooms">
   </div>
   <div class="form-group">
     <label for="bathrooms" class="">Bathrooms:</label>
     <input type="number" class="form-control" name="bathrooms" id="bathrooms">
   </div>
   <div class="form-group">
-    <label for="details" class="">Details:</label>
-    <textarea type="text" class="form-control" name="details" id="details" rows="5"></textarea>
+    <label for="description" class="">Description:</label>
+    <textarea type="text" class="form-control" name="description" id="description" rows="5"></textarea>
   </div>
   <div class="form-group">
-    <label for="img" class="">img:</label>
-    <input type="url" class="form-control" name="img" id="img" >
+    <label for="imgUrl" class="">img:</label>
+    <input type="url" class="form-control" name="imgUrl" id="imgUrl" >
   </div>
   <div class="button-group my-3">
     <button type="reset" class="btn btn-secondary">clear</button>
